@@ -8,7 +8,7 @@ import java.util.List;
 
 public class PlayerService {
 
-    // ===== LOGIN =====
+    // LOGIN
     public Player login(String username, String password) {
         String sql = "SELECT * FROM players WHERE username = ? AND password = ?";
         try {
@@ -62,7 +62,7 @@ public class PlayerService {
         }
     }
 
-    // ===== GET PLAYER BY ID (buat refresh data di StatisticsFrame) =====
+    // GET PLAYER BY ID (buat refresh data di StatisticsFrame)
     public Player getPlayerById(int id) {
         String sql = "SELECT * FROM players WHERE id = ?";
         try {
@@ -86,7 +86,7 @@ public class PlayerService {
         return null;
     }
 
-    // ===== TOP 5 SCORERS (sesuai PDF section 10.11) =====
+    // TOP 5 SCORERS
     public List<Player> getTopFiveScorers() {
         List<Player> list = new ArrayList<>();
         String sql = "SELECT id, username, wins, losses, draws, score FROM players "

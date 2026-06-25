@@ -18,13 +18,13 @@ public class TopScorersFrame extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // === Title ===
+        // Title
         JLabel lblTitle = new JLabel("TOP 5 SCORERS", SwingConstants.CENTER);
         lblTitle.setFont(new Font("Segoe UI", Font.BOLD, 18));
         lblTitle.setBorder(BorderFactory.createEmptyBorder(15, 10, 15, 10));
         add(lblTitle, BorderLayout.NORTH);
 
-        // === Table ===
+        // Table
         String[] columns = {"Rank", "Username", "Wins", "Losses", "Draws", "Score"};
         DefaultTableModel model = new DefaultTableModel(columns, 0);
 
@@ -46,7 +46,7 @@ public class TopScorersFrame extends JFrame {
         table.setEnabled(false); // read-only
         add(new JScrollPane(table), BorderLayout.CENTER);
 
-        // === Tombol Close ===
+        // Tombol Close
         JButton btnClose = new JButton("Close");
         btnClose.addActionListener(e -> dispose());
         JPanel btnPanel = new JPanel();

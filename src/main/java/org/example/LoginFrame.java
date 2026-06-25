@@ -14,7 +14,7 @@ public class LoginFrame extends JFrame {
     public LoginFrame() {
         playerService = new PlayerService();
 
-        // === Window setup ===
+        // Window setup
         setTitle("Login - Tic Tac Toe");
         setSize(360, 220);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,13 +25,13 @@ public class LoginFrame extends JFrame {
         gbc.insets = new Insets(8, 8, 8, 8);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        // === Title ===
+        // Title
         JLabel lblTitle = new JLabel("LOGIN", SwingConstants.CENTER);
         lblTitle.setFont(new Font("Segoe UI", Font.BOLD, 18));
         gbc.gridx = 0; gbc.gridy = 0; gbc.gridwidth = 2;
         add(lblTitle, gbc);
 
-        // === Username ===
+        // Username
         gbc.gridwidth = 1;
         gbc.gridx = 0; gbc.gridy = 1;
         add(new JLabel("Username:"), gbc);
@@ -39,19 +39,19 @@ public class LoginFrame extends JFrame {
         gbc.gridx = 1; gbc.gridy = 1;
         add(txtUsername, gbc);
 
-        // === Password ===
+        // Password
         gbc.gridx = 0; gbc.gridy = 2;
         add(new JLabel("Password:"), gbc);
         txtPassword = new JPasswordField(15);
         gbc.gridx = 1; gbc.gridy = 2;
         add(txtPassword, gbc);
 
-        // === Login button ===
+        // Login button
         btnLogin = new JButton("Login");
         gbc.gridx = 0; gbc.gridy = 3; gbc.gridwidth = 2;
         add(btnLogin, gbc);
 
-        // === Event handler ===
+        // Event handler
         btnLogin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String username = txtUsername.getText().trim();

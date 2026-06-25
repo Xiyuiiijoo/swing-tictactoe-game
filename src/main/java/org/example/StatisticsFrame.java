@@ -18,13 +18,13 @@ public class StatisticsFrame extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // === Title ===
+        // Title
         JLabel lblTitle = new JLabel("MY STATISTICS", SwingConstants.CENTER);
         lblTitle.setFont(new Font("Segoe UI", Font.BOLD, 18));
         lblTitle.setBorder(BorderFactory.createEmptyBorder(15, 10, 15, 10));
         add(lblTitle, BorderLayout.NORTH);
 
-        // === Data panel ===
+        // Data panel
         JPanel dataPanel = new JPanel(new GridLayout(5, 2, 10, 5));
         dataPanel.setBorder(BorderFactory.createEmptyBorder(10, 30, 10, 30));
 
@@ -45,7 +45,7 @@ public class StatisticsFrame extends JFrame {
 
         add(dataPanel, BorderLayout.CENTER);
 
-        // === Tombol Close ===
+        // Tombol Close
         JButton btnClose = new JButton("Close");
         btnClose.addActionListener(e -> dispose());
         JPanel btnPanel = new JPanel();
