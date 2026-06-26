@@ -86,4 +86,4 @@ PostgreSQL table named `players`.
 ![Top 5 Scorers](screenshots/top-scorers.png)
 
 ## Video Demonstration
-YouTube: [link YouTube nanti]
+YouTube: https://youtu.be/5nLoqrTK_ZI
